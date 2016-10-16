@@ -43,12 +43,12 @@ utils.pass()
 	//console.log('Trying to compile...')
 	return utils.pass()
 	.then(utils.execute(
-		path.resolve(utils.modulePath('npm-arduino-builder'), 'arduino-builder', 'arduino-builder') + ' ' +
+		path.resolve(utils.modulePath('quirkbot-arduino-builder'), 'tools', 'arduino-builder') + ' ' +
 		'-hardware="' + path.resolve('node_modules') + '" ' +
-		'-hardware="' + path.resolve(utils.modulePath('npm-arduino-builder'), 'arduino-builder', 'hardware') + '" ' +
+		'-hardware="' + path.resolve(utils.modulePath('quirkbot-arduino-builder'), 'tools', 'hardware') + '" ' +
 		'-libraries="' + path.resolve('node_modules') + '" ' +
-		'-tools="' + path.resolve(utils.modulePath('npm-arduino-avr-gcc'), 'tools') + '" ' +
-		'-tools="' + path.resolve(utils.modulePath('npm-arduino-builder'), 'arduino-builder', 'tools') + '" ' +
+		'-tools="' + path.resolve(utils.modulePath('quirkbot-avr-gcc'), 'tools') + '" ' +
+		'-tools="' + path.resolve(utils.modulePath('quirkbot-arduino-builder'), 'tools', 'tools') + '" ' +
 		'-fqbn="quirkbot-arduino-hardware:avr:quirkbot" ' +
 		'-ide-version=10607 ' +
 		'-build-path="' + path.resolve(__dirname, '.tmp-build') + '" ' +
@@ -72,5 +72,7 @@ utils.pass()
 })
 // Move hex to output
 .then(utils.copyDir(path.resolve(__dirname, '.tmp-build', 'firmware.ino.hex'), path.resolve(output, `${UUID}.hex`)))
+// Register in the UUID direcotry
+.then(utils.appendFile(path.resolve( 'UUIDs.txt'), new Date() + ',' +UUID.substring(0, 16)+endOfLine))
 .then(process.exit)
 
