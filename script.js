@@ -72,5 +72,7 @@ utils.pass()
 })
 // Move hex to output
 .then(utils.copyDir(path.resolve(__dirname, '.tmp-build', 'firmware.ino.hex'), path.resolve(output, `${UUID}.hex`)))
+// Register in the UUID direcotry
+.then(utils.appendFile(path.resolve( 'UUIDs.txt'), new Date() + ',' +UUID.substring(0, 16)+endOfLine))
 .then(process.exit)
 

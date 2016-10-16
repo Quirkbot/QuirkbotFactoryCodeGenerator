@@ -175,6 +175,24 @@ var findFiles = function(startPath, filter, files){
 }
 exports.findFiles = findFiles
 
+var appendFile = function(path, content){
+	return function(){
+		var payload = arguments
+
+		var promise = function(resolve, reject){
+			fs.appendFile(path, content, function (error) {
+				if (error) {
+					reject(error)
+					return
+				}
+				resolve.apply(null, payload)
+			})
+		}
+		return new Promise(promise)
+	}
+}
+exports.appendFile = appendFile
+
 var mkdir = function(path){
 	return function(){
 
