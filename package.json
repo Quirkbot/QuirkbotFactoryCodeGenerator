@@ -4,13 +4,13 @@
   "description": "Quirkbot Factory Code Generator",
   "author": "Paulo Barcelos <paulo@quirkbot.com>",
   "dependencies": {
-    "node-uuid": "1.4.3",
-    "quirkbot-avr-gcc": "1.0.0",
-    "quirkbot-arduino-builder": "0.0.4",
-    "quirkbot-arduino-hardware": "0.4.8",
-    "quirkbot-arduino-library": "2.4.1",
     "ncp": "2.0.0",
-    "rimraf": "2.4.4"
+    "node-uuid": "1.4.8",
+    "quirkbot-arduino-builder": "0.0.5",
+    "quirkbot-arduino-hardware": "0.4.9",
+    "quirkbot-arduino-library": "2.5.7",
+    "quirkbot-avr-gcc": "1.0.1",
+    "rimraf": "2.6.2"
   },
   "scripts": {
     "start": "node script.js"
