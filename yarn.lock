@@ -7,8 +7,8 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
 brace-expansion@^1.1.7:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
@@ -71,13 +71,13 @@ quirkbot-arduino-builder@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/quirkbot-arduino-builder/-/quirkbot-arduino-builder-0.0.5.tgz#3a1d26413e0698e3d5923382dcbcbe2bf4aa0d78"
 
-quirkbot-arduino-hardware@0.4.9:
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/quirkbot-arduino-hardware/-/quirkbot-arduino-hardware-0.4.9.tgz#ca0b732a5c286c65f93290e870db330408ed6f6e"
+quirkbot-arduino-hardware@0.4.10:
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/quirkbot-arduino-hardware/-/quirkbot-arduino-hardware-0.4.10.tgz#c427f25482806e3c468f8a7daf64b7e330ea105d"
 
-quirkbot-arduino-library@2.5.7:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/quirkbot-arduino-library/-/quirkbot-arduino-library-2.5.7.tgz#0c098631e9ffb649ee4ae1f1056d9c8d46fcac64"
+quirkbot-arduino-library@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/quirkbot-arduino-library/-/quirkbot-arduino-library-2.6.2.tgz#821afbb8dd2213cd3284b58e7233088f8a829bc5"
 
 quirkbot-avr-gcc@1.0.1:
   version "1.0.1"
