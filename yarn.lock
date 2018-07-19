@@ -71,13 +71,13 @@ quirkbot-arduino-builder@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/quirkbot-arduino-builder/-/quirkbot-arduino-builder-0.0.5.tgz#3a1d26413e0698e3d5923382dcbcbe2bf4aa0d78"
 
-quirkbot-arduino-hardware@0.4.10:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/quirkbot-arduino-hardware/-/quirkbot-arduino-hardware-0.4.10.tgz#c427f25482806e3c468f8a7daf64b7e330ea105d"
+quirkbot-arduino-hardware@0.4.11:
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/quirkbot-arduino-hardware/-/quirkbot-arduino-hardware-0.4.11.tgz#6f6a816a13ebee9cdc3c1d022cf1f0c26ac308be"
 
-quirkbot-arduino-library@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/quirkbot-arduino-library/-/quirkbot-arduino-library-2.6.2.tgz#821afbb8dd2213cd3284b58e7233088f8a829bc5"
+quirkbot-arduino-library@2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/quirkbot-arduino-library/-/quirkbot-arduino-library-2.6.3.tgz#95f4de3edf82d8039e819703e8d712a7c36907a1"
 
 quirkbot-avr-gcc@1.0.1:
   version "1.0.1"
