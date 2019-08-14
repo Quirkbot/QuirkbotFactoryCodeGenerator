@@ -180,14 +180,11 @@ void success(){
 	}
 
 }
-void fail(){
 	while(true){
 		wdt_reset();
-		allLedsOn();
-		(delay)(200);
-		allLedsOff();
 		(delay)(200);
 	}
+
 }
 void allLedsOff(){
 	pinMode(LE, OUTPUT);
