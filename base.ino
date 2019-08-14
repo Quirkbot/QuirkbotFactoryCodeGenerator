@@ -175,12 +175,6 @@ bool testSinglePadInput(int pad, int route, int source){
 void success(){
 	allLedsOn();
 	while(true){
-		(delay)(200);
-		wdt_reset();
-	}
-
-}
-	while(true){
 		wdt_reset();
 		(delay)(200);
 	}
