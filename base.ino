@@ -175,19 +175,10 @@ bool testSinglePadInput(int pad, int route, int source){
 void success(){
 	allLedsOn();
 	while(true){
-		(delay)(200);
 		wdt_reset();
+		(delay)(200);
 	}
 
-}
-void fail(){
-	while(true){
-		wdt_reset();
-		allLedsOn();
-		(delay)(200);
-		allLedsOff();
-		(delay)(200);
-	}
 }
 void allLedsOff(){
 	pinMode(LE, OUTPUT);
